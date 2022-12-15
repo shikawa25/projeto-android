@@ -1,0 +1,240 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Stentiga";
+    src: url(fontes/stentiga.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-weight: normal;
+    src: url(fontes/OpenSans-Regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "OpenSans";
+    font-weight: bold;
+    src: url(fontes/OpenSans-Bold.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: "IDroid";
+    font-weight: normal;
+    src: url(fontes/IDroid.otf) format(opentype);
+}
+
+* {
+    font-family: OpenSans, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to bottom, #88D498, #1a936f);
+    margin: auto;
+    color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.507);
+    min-width: 340px;
+}
+
+header > h1 {
+    font: normal 3em "Stentiga", sans-serif;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.507);
+    margin: 0;
+    padding: 50px 0 0 0;
+}
+
+header > p {
+    color: rgba(255, 255, 255, 0.623);
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.507);
+    padding: 10px 60px 0 60px;
+    margin: 0;
+}
+
+header > nav {
+    padding: 15px 0 6px 0;
+    
+}
+header > nav > a {
+    color: #d8e6d3;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 -3px;
+    padding: 6px 10px;
+}
+
+
+header > nav > a:hover {
+    color: #bee2b1;
+    background-color: #15795B;
+    border-radius: 7%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+article {
+    padding: 10px 30px 10px 30px;
+}
+
+body {
+    margin: 0;
+    background-color: #C6DABF;
+    
+}
+
+main {
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    min-width: 340px;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.507);
+}
+
+
+.postagem-android strong {
+    color: #007220;
+}
+
+.postagem-android h1, h2 {
+    font-family: "IDroid", sans-serif;
+    font-weight: normal;
+}
+
+.postagem-android h1 {
+    font-size: 2em;
+    color: #15795B;
+}
+
+.postagem-android h2 {
+    font-size: 1.2em;
+    background-image: linear-gradient(to right, rgb(65, 197, 120), rgba(0, 0, 0, 0));
+    color: #165a2a;
+    padding: 0 0 0 10px;
+    margin-left: -10px;
+    width: max-content;
+}
+
+.postagem-android p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.postagem-android a {
+    font-weight: bold;
+    color: #15795B;
+    background-color: #d4eeda;
+    text-decoration: none;
+    padding: 0 5px 0 5px;
+}
+
+.postagem-android a:hover {
+    color: hsl(162, 70%, 35%);
+    text-decoration: underline;
+
+}
+
+.postagem-android a::after {
+    content: " 🔗";
+
+}
+
+.postagem-android img.dinamicas {
+    margin: auto;
+    width: 90%;
+    display: block;
+  }
+
+.postagem-android img.nao-dinamicas {
+    margin: auto;
+    width: auto;
+    display: block;
+  }
+
+  div.video {
+    margin: 40px -30px 40px -30px;
+    background-color: #3b5a45;
+    position: relative;
+    padding: 60px;
+    padding-bottom: 50%;
+  }
+  div.video > iframe {
+    top: 5%;
+    left: 5%;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+  }  
+  
+/* iframe#video-youtube {
+    margin: 35px -30px 40px -30px;
+    width: 100%;
+    height: 400px;
+    display: block;
+    border: 30px solid #3b5a45;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.507);
+} */
+
+.postagem-android aside {
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #88D498;
+    text-align: justify;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.507);
+}
+
+
+.postagem-android aside a {
+    background: none;
+    
+}
+
+.postagem-android aside h1 {
+    color:  #e8ffee;
+    font: bold 1.3em OpenSans;
+    margin: -20px -20px 10px -20px;
+    padding: 10px 0 10px 20px;
+    border-radius: 20px 20px 0 0;
+    background-color: #3b5a45;
+    text-align: left;
+    }
+
+.postagem-android aside ol {
+    display: block;
+    list-style: none;
+    flex-grow: 0.1;
+    flex-basis: 200px;
+    padding: 0;
+    text-align: left;
+    margin: 0 30px 0 30px;
+}
+
+.postagem-android aside section#lista-versoes-android {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 0 15px 0;
+}
+
+.postagem-android aside ol li::before {
+    content: "✔️ ";
+}
+
+
+.postagem-android aside section#lista-versoes-android span {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+footer{
+    min-width: 340px;
+    padding: 10px 0 10px 0;
+    margin: 30px 0 0 0;
+    color: #e8ffee;
+    background-color: #3b5a45;
+}
